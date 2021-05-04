@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & tabellen</title>
+</head>
+<body>
+    <ol>
+        <li>
+            <b>Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan vullen</b><br>
+            <form>
+                Achternaam <input type="text"><br>
+                Voornaam: <input type="text">
+            </form>
+        </li>
+        <li>
+            <b>Naast input text fields zijn er ook nog andere input fields. Zoals:</b><br>
+            <form>
+                <ul>
+                    <li>Radiobutton <input type="radio"></li>
+                    <li>checkbox <input type="checkbox"> </li>
+                    <li>password  <input type="password"></li>
+                    <li>reset <input type="reset"></li>
+                    <li>submit <input type="submit"></li>
+                    <li>date <input type="date"></li>
+                    <li>search <input type="search"> </li>
+                    <li>time <input type="time"></li>
+                    <li>hidden <input type="hidden"></li>
+                    <li>email <input type="email"></li>
+                </ul>
+            </form>
+        </li>
+        <li>
+            <b>Maak een input email field met een submit knop. </b><br>
+            <form>
+                email <input type="email"> <input type="submit">
+            </form>
+        </li>
+        <li>
+            <b>Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:</b>
+            <form>
+                <fieldset>
+                    <legend>Persoonsgegevens</legend>
+                    Achternaam: <input type="text"><br>
+                    Voornaam: <input type="text"><br>
+                    Geboortedatum: <input type="date"><br>
+                    M: <input type="radio" name ="gender" value="m" > V: <input name ="gender" value="v" type="radio"><br>
+                    Postcode: <input type="text"><br>
+                    Adres: <input type="text"><br>
+                </fieldset>
+                <input type="submit" value="Submit"><input type="reset">
+            </form>
+        </li>
+        <li>
+            <b>Naast input element heb je ook een select element. Hiermee kan je een dropdown list maken. Maak een drop down list. </b><br>
+            <select name="ddl">
+                <option>drop</option>
+                <option>down</option>
+                <option>list</option>
+            </select>
+        </li>
+        <li>
+            <b>We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie waar je in kan gebruiken en leg dat uit? </b><br>
+            Een dropdown-list kan je gebruiken als je veel keuzemogelijkheden hebt, zoals als je moet aangeven uit welk land je komt. Radio buttons zijn handig als je een keuze moet maken uit een kleine groep. Checkboxes kan je gebruiken als je meerdere keuzes kan maken uit een selectie.
+        </li>
+        <li>
+            <b>Maak een reserveringsformulier om een sport te reserveren.</b><br>
+            <form>
+                <fieldset>
+                    <legend>Reservering</legend>
+                    Naam: <input type="text"><br>
+                    Bent u lid?: Ja <input type="radio" name ="lid" value="ja" > Nee <input name ="lid" value="nee" type="radio"><br>
+                    Email: <input type="email"><br> 
+                    Sport: 
+                    <select name="sport">
+                        <option>Tafeltennis</option>
+                        <option>badminton</option>
+                        <option>squash</option>
+                    </select><br>
+                    Datum en tijd: <input type="date"><input type="time"><br>
+                    Ik ga akkoord met de voorwaarden: <input type="checkbox">
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+        <li>
+            <b>Maak een reserverings formulier om een boek te reserveren.</b><br>
+            <form>
+                <fieldset>
+                    <legend>Boek Reservering</legend>
+                    Naam: <input type="text"><br>
+                    Telefoonnummer: <input type="text"><br>
+                    Email: <input type="email"><br>
+                    Naam van boek: <input type="text"><br>
+                    Aantal boeken: 
+                    <select name="aantal">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+        <li>
+            <b>Bouw nu zelf een formulier met wat je hiervoor hebt geleerd. </b><br>
+            <form>
+                <fieldset>
+                    <legend>Auto Huren</legend>
+                    Naam: <input type="text"><br>
+                    Telefoonnummer: <input type="text"><br>
+                    Email: <input type="email"><br>
+                    Auto: 
+                    <select name="aantal">
+                        <option>Ford Fiesta</option>
+                        <option>Ford Focus</option>
+                        <option>Volkswagen Polo</option>
+                        <option>Renault Clio</option>
+                        <option>Peugeot 108</option>
+                    </select><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+    </ol>
+</body>
+</html>
