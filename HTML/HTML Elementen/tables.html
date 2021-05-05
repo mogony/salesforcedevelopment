@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <ol start="10">
+        <li>
+            Om een tabel te maken heb je volgende elementen nodig:
+            Geef voor elke element een definitie.
+            <ul>
+                <li>table: hiermee definieer je een html table</li>
+                <li>groeperend elementen:</li>
+                <ul>
+                    <li>thead: dit groepeert de header van de tabel in een rij</li>
+                    <li>tbody: dit geeft de basiscontent aan</li>
+                    <li>tfoot: dit geeft de footercontent aan</li>
+                </ul>
+                <li>th: tabelcel als een header</li>
+                <li>tr: tabelrij</li>
+                <li>td: tabelcellen</li>
+            </ul>
+        </li>
+        <li>
+            <b>Maak een tabel met &lt;table&gt; element.</b>
+            <table>
+                <thead>
+                    <th>Voornaam</th>
+                    <th>Achternaam</th>
+                    <th>Leeftijd</th>
+                    <th>Telefoonnr</th>
+                </thead>
+                <tr>
+                    <td>Steven</td>
+                    <td>Smith</td>
+                    <td>32</td>
+                    <td>+31 12345678</td>
+                </tr>
+                <tr>
+                    <td>Alexander</td>
+                    <td>Beave</td>
+                    <td>16</td>
+                    <td>+31 12345678</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <b>Maak een agenda tabel met &lt;table&gt; element. Zie hieronder:</b><br>
+            <table>
+                <thead align="center">
+                    <th>MA</th>
+                    <th>DI</th>
+                    <th>WO</th>
+                    <th>DO</th>
+                    <th>VR</th>
+                </thead>
+                <tr>
+                    <td>Afspraak met tandarts</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Sporten</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Huiswerk maken</td>
+                    <td>Werken</td>
+                    <td>Werken</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Afspraak met tandarts</td>
+                    <td></td>
+                    <td></td>
+                    <td>Werken</td>
+                    <td>Bij vrienden</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <b>Voor het maken van een tabel kan je ook gebruik maken van colspan en rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet het volgende:</b><br>
+            <table>
+                <thead>
+                    <th></th>
+                    <th>Sport</th>
+                    <th>Aantal recreantan</th>
+                    <th>Aantal competitie spelers</th>
+                    <th>Totale deelnemers</th>
+                </thead>
+                <tr>
+                    <td rowspan="3">Racketsport</td>
+                    <td>badminton</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Tafeltennis</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Tennis</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Tennis</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Ball sport</td>
+                    <td>Voetbal</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Basketball</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Volleybal</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <b>Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd.</b><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th colspan="2" align="center">duurloop</th>
+                        <th colspan="3" align="center">verspringen</th>
+                    </tr>
+                    <tr>
+                        <th>snelheid</th>
+                        <th>afstand</th>
+                        <th>spronggrootte</th>
+                        <th>afstand</th>
+                        <th>valtechniek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jeremy</td>
+                        <td>6km/u</td>
+                        <td>12km</td>
+                        <td>1m</td>
+                        <td>3m</td>
+                        <td>goed</td>
+                    </tr>
+                    <tr>
+                        <td>Hans</td>
+                        <td>5km/u</td>
+                        <td>13km</td>
+                        <td>1.5m</td>
+                        <td>2m</td>
+                        <td>slecht</td>
+                    </tr>
+                    <tr>
+                        <td>Grietje</td>
+                        <td>8km/u</td>
+                        <td>20km</td>
+                        <td>2m</td>
+                        <td>5m</td>
+                        <td>redelijk</td>
+                    </tr>
+                    <tr>
+                        <td>Collin</td>
+                        <td>9km/u</td>
+                        <td>15km</td>
+                        <td colspan="3">met blessure uitgevallen</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Gemiddelde</td>
+                        <td>7km/u</td>
+                        <td>15km</td>
+                        <td>1.5m</td>
+                        <td>3m</td>
+                        <td>redelijk</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </li>
+    </ol>
+</body>
+</html>
