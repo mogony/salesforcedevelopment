@@ -42,7 +42,33 @@
             Als het plaatje niet kan worden weergegeven, is het handig om een alternatieve tekst te hebben.
         </li>
         <li>
-            In de sound folder staat een explosion.mp3 bestand. Laadt dit bestand in als een audio op het scherm. 
+            <b>In de sound folder staat een explosion.mp3 bestand. Laadt dit bestand in als een audio op het scherm.</b> <br>
+            <audio controls>
+                <source src="explosion.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio><br>
+            <i>Extra: Maak het leuker door de audio op repeat te zetten.</i><br>
+            <audio controls loop>
+                <source src="explosion.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio><br>
+        </li>
+        <li>
+            <b>Speel een audio bestand af met <source> tag. Leg uit wat hier het voordeel van is.</b><br>
+            <audio controls autoplay>
+                <source src="explosion.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio><br>
+            Zo hoef je niet op een knop te drukken om iets af te spelen. Het viel mij wel op dat ik mijn browser eerst toestemming moest verlenen om dit geluid te laten autoplayen.
+        </li>
+        <li>
+            <b>Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in als een video op het scherm.</b><br>
+            <i>Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut je voor de video element kan gebruiken om de grootte van de video aan te passen.</i><br>
+            Video grootte heb ik op 500 bij 300 gezet.<br>
+            <video controls width=500 height=300>
+                <source src="video.mp4" type="video/mp4">
+              Your browser does not support the video element.
+            </audio><br>
         </li>
     </ol>
     <img src="relative.jpg">
