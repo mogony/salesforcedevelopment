@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General Selectors</title>
     <style>
-        h1 ~ p {
+        h1 {
+            color: blue;
+        }
+
+        #blauw {
             color: red;
+        }
+
+        .groen {
+            color: green;
         }
     </style>
 </head>
@@ -15,9 +23,8 @@
     <nav>
         <a href="../opdracht6.html">&lt;&lt;</a>
     </nav>
-    <p>Als ik het goed begrijp, wordt hier naar de general sibling selector gevraagd.</p>
-    <h1>General sibling selector</h1>
-    <p>Voor een voorbeeld, zie de css code.</p>
-    <p>Een general sibling selector pakt alle gespecificeerde elementen na het eerst genoemde element. Daardoor zijn deze en de voorgaande paragraaf rood, en de eerste niet.</p>
+    <h1>General selectors</h1>
+    <p id="blauw">General selectors zijn gewoon de naam van een elementen, een id of een class.</p>
+    <p class="groen">Een id zou maar op 1 plek gebruikt moeten worden, terwijl je een class overal kan gebruiken.</p>
 </body>
 </html>
