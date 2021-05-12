@@ -5,8 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht 7</title>
+    <style>
+        * {
+            font-size: 18px;
+        }
+
+        li {
+            font-weight: bold;
+        }
+
+        .klasse {
+            font-style: italic;
+        }
+
+        #ajdie {
+            font-weight: normal;
+        }
+
+        .cs li {
+            font-family: monospace;
+        }
+
+        .cs > li {
+            color: pink;
+        }
+
+        #adjss + li {
+            color: pink;
+        }
+
+        #adjss ~ li {
+            font-style: italic;
+        }
+
+        a:hover {
+            color:white;
+        }
+
+        .pes::first-letter{
+            color: red;
+        }
+
+        li[target] {
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <a href="opdracht6.html">&lt;&lt;</a> opdracht <a href="opdracht8.html">&gt;&gt;</a>
+    </nav>
+    <ul>
+        <li>General selectors</li>
+        <ul>
+            <li>Grouping selector. Alle list items 'li' zijn nu bold</li>
+            <li>Universal selector. ALLE tekst op de pagina heeft nu lettergroote 18px</li>
+            <li class="klasse">Op class, dmv een punt. Dit list item heeft klasse "klasse" die deze tekst schuingedrukt maakt </li>
+            <li id="ajdie">Op Id, dmv #. Dit list item heeft een id genaamd  "ajdie" die deze tekst 'normaal' maakt.</li>
+        </ul>
+        <li>Combinator selectors. De volgende unorganized list heeft klasse "cs"</li>
+        <ul class="cs">
+            <li>descendant selector, hierdoor zijn alle list item elementen genest in de div class "cs" nu monospace</li>
+            <li>child selector, hierdoor zijn de list items die direct kinderen zijn in de div class "cs" roze. </li>
+            <ul>
+                <li id="adjss">Dit is niet roze</li>
+                <li>Maar dit wel, omdat het list item hierboven id "adjss" en dmv een adjacent sibling selector '+' de kleur roze maakt</li>
+                <li>Dit list item en hierboven zijn schuingedrukt dmv een general sibling selector (~) van het eerste list item</li>
+            </ul>
+        </ul>
+        <li>Pseudo-class selectors</li>
+        <ul>
+            <li><a href="opdracht7.html">Door een pseudo-class heeft deze link nu andere kleuren dan normaal als je er met je muis over heen beweegt</a></li>
+        </ul>
+        <li>Pseudo-element selectors</li>
+        <ul>
+            <li class="pes">Dit list item heeft klasse "pes". Met pseudo-element selector "first-letter" is de eerste letter rood gemaakt.</li>
+        </ul>
+        <li>Attribute selectors</li>
+        <ul>
+            <li target="">Hiermee worden elementen met bepaalde attributen geselecteerd. Dit list item heeft attribuut "target" en daardoor is de achtergrond hiervan nu geel</li>
+        </ul>
+    </ul>
 </body>
 </html>
