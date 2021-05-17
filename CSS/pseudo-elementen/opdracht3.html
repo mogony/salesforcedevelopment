@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pseud::after {
+            content: "dit is after";
+            color: red;
+        }
+
+        .pseud::before {
+            content: "dit is before";
+            color: blue;
+        }
+
+        .pseud::first-letter {
+            font-weight: bold;
+        }
+
+        .pseud::first-line {
+            font-style: italic;
+        }
+
+        .knop::file-file-selector-button {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            ::after & ::before & ::fist-letter & first-line<br>
+            <div class="pseud">, dit is het element, en <br> first-line heeft hier geen invloed op, </div>
+        </li>
+        <li>::backdrop<br></li>
+        <li>::cue<br></li>
+        <li>
+            ::file-selector-button<br>
+            <input type="button" value="Knop" class="knop">
+        </li>
+        <li>::grammar-error<br>Detecteert grammaticafouten</li>
+        <li>::marker<br>Selecteert de marker van een list item</li>
+        <li>::part(naam)<br>Selecteert element waarbij part="naam" is</li>
+        <li>::placeholder<br>Invloed op de placeholder tekst van text input</li>
+        <li>::selection<br>Betreft geselecteerde gedeelte van een element</li>
+        <li>::spelling-error<br>Detecteert spellingsfouten</li>
+        <li>::target-text<br>Heeft effect op geselecteerde tekst als er naar gescrolled wordt</li>
+    </ol>
+</body>
+</html>
