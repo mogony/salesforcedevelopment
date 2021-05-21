@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let datetype = "string";
+        console.log("datetype " + typeof datetype);
+
+        datetype = 9;
+        console.log("datetype " + typeof datetype);
+
+        datetype = 9n;
+        console.log("datetype " + typeof datetype);
+
+        datetype = Symbol('symbol');
+        console.log("datetype " + typeof datetype);
+    </script>
+
+    <ol>
+        <li>String is een tekst en wordt altijd gedifinieerd door de tekst tussen aanhalingstekens te zetten.</li>
+        <li>Number herken je aan dat het een getal is.</li>
+        <li>Bigint eindigt altijd op n. BigInt kan oneindig veel getallen opslaan.</li>
+        <li>Symbol maak je aan met een Symbol constructor.</li>
+    </ol>
+</body>
+</html>

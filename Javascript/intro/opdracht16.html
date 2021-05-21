@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = "Hello, world";
+
+        //charAt pakt het teken op de aangegeven plaats. In dit geval op plaats 5. 'H' staat op plek 0, dan staat de komma op plaats 5.
+        console.log(string.charAt(5));
+
+        //Concat plakt de waarde in de fucntie achter het string object die het aanroept.
+        console.log(string.concat(string));
+
+        //slice returned een gedeelte van de string
+        console.log(string.slice(0,5));
+
+        //split, split de string in 2en op de plek waar aangegeven wordt waar het gesplit moet worden en keert het terug als een lijst
+        const list = string.split(' ');
+        console.log(list[1] + " " + list[0]);
+
+        //substring pakt een gedeelte van een string
+        console.log(string.substring(7, 12));
+    </script>
+</body>
+</html>
