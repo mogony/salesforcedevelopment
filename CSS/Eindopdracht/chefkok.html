@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Lobster', cursive;
+            background-color:  rgb(117,108,108);
+        }
+
+        nav {
+            text-align: right;
+            font-size: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        header {
+            background-color: black;
+            color: blue;
+            position: relative;
+            color: rgb(97, 135, 216);
+        }
+
+        header img{
+            width: 100%;
+            opacity: 0.2;
+        }
+
+        header h1 {
+            font-size: 60px;
+            margin-bottom: -5px;
+        }
+
+        header .text {
+            position: absolute;
+            top: 5%;
+            right: 20%;
+        }
+
+        header input {
+            width: 100px;
+            color: inherit;
+            background-color: rgb(0,0,0,0.0);
+            font-family: inherit;
+            font-size: 18px;
+            padding: 2px 0 2px 0;
+            border: 2px solid rgb(128, 179, 128);
+        }
+
+        header input:hover {
+            color:rgb(128, 179, 128);
+        }
+
+        main h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        main img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .popgerechten {
+            margin-bottom: 20px;
+        }
+
+        .popgerechten div {
+            position: relative;
+            display: inline-block;
+            min-width: 250px;
+            width: 20%;
+            margin: 0 7% 0 6%;
+        }
+
+        .popgerechten div > * {
+            margin: 2px;
+            font-size: 14px;
+        }
+
+        .popgerechten div > h2 {
+            font-size: 20px;
+            display: inline;
+        }
+
+        span {
+            float: right;
+        }
+
+        .popgerechten div > img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 0px;
+        }
+
+        .menu img {
+            display: inline-block;
+            height: 100%;
+            width: 29%;
+            bottom: 0px;
+            vertical-align: bottom;
+        }
+
+        .menu-items {
+            position: relative;
+            display: inline-block;
+            width: 69%;
+            height: 100%;
+        }
+
+        .menu-items div {
+            position: relative;
+            display: inline-block;
+            margin: 6%;
+            max-width: 20%;
+        }
+
+        .menu-container {
+            position: relative;
+            height: 100%;
+        }
+
+        .menu-items div > h3 {
+            display: inline;
+        }
+
+        .menu-items div > p {
+            margin-top: 0px;
+        }
+
+        footer {
+            border:1px rgb(128, 179, 128) solid;
+            margin-top: 0px;
+            background-color: rgb(128, 179, 128);
+            color: rgb(97, 135, 216);
+            text-align: center;
+        }
+
+        footer div {
+            display: inline-block;
+            text-align: left;
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+
+        footer ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <header>
+        <img src="images2/cooking.jpg">
+        <div class="text">
+            <h1>Cooking</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <input type="button" value="buy">
+            <input type="button" value="more">
+        </div>
+    </header>
+    <main>
+        <div class="popgerechten">
+            <h1>Populaire gerechten</h1>
+            <div>
+                <img src="images2/dish1.jpg">
+                <h2>Pasta</h2><span>8,99</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula tortor magna, eu faucibus elit accumsan bibendum. Sed tempor consectetur hendrerit. Aliquam mi turpis, pharetra at placerat id, malesuada at augue. Praesent maximus, ligula et faucibus sagittis, metus ex bibendum nisi, ac suscipit neque ipsum in sem. 
+                </p>
+                <span>show...</span>
+            </div>
+            <div>
+                <img src="images2/dish1.jpg">
+                <h2>Pasta</h2><span>8,99</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula tortor magna, eu faucibus elit accumsan bibendum. Sed tempor consectetur hendrerit. Aliquam mi turpis, pharetra at placerat id, malesuada at augue. Praesent maximus, ligula et faucibus sagittis, metus ex bibendum nisi, ac suscipit neque ipsum in sem. 
+                </p>
+                <span>show...</span>
+            </div>
+            <div>
+                <img src="images2/dish1.jpg">
+                <h2>Pasta</h2><span>8,99</span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula tortor magna, eu faucibus elit accumsan bibendum. Sed tempor consectetur hendrerit. Aliquam mi turpis, pharetra at placerat id, malesuada at augue. Praesent maximus, ligula et faucibus sagittis, metus ex bibendum nisi, ac suscipit neque ipsum in sem. 
+                </p>
+                <span>show...</span>
+            </div>
+        </div>
+        <div class="menu">
+            <h1>Menu</h1>
+            <div class="menu-container">
+                <img src="images2/chef1.webp">
+                <div  class="menu-items">
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                    <div>
+                        <h3>Pasta</h3><span>$8,99</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1>Contact</h1>
+            <ul>
+                <li>Osdorplein 16, 1234ab, Amsterdam</li>
+                <li>Tel nr: 123456789</li>
+                <li>Openingstijden: ma t/m vr 10:00 - 22:00</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Navigation</h1>
+            <ul>
+                <li>HOME</li>
+                <li>MENU</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
