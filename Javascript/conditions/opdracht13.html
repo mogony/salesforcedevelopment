@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Translate months</h1>
+
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+    <script>
+        function translateMonth() {
+            const num = Number(document.getElementById("number").value);
+            if(num === 1) {
+                document.getElementById("translatedMonth").innerHTML = "Januari";
+            } else if(num === 2) {
+                document.getElementById("translatedMonth").innerHTML = "Februari";
+            } else if(num === 3) {
+                document.getElementById("translatedMonth").innerHTML = "Maart";
+            } else if(num === 4) {
+                document.getElementById("translatedMonth").innerHTML = "April";
+            } else if(num === 5) {
+                document.getElementById("translatedMonth").innerHTML = "Mei";
+            } else if(num === 6) {
+                document.getElementById("translatedMonth").innerHTML = "Juni";
+            } else if(num === 7) {
+                document.getElementById("translatedMonth").innerHTML = "Juli";
+            } else if(num === 8) {
+                document.getElementById("translatedMonth").innerHTML = "Augustus";
+            } else if(num === 9) {
+                document.getElementById("translatedMonth").innerHTML = "September";
+            } else if(num === 10) {
+                document.getElementById("translatedMonth").innerHTML = "Oktober";
+            } else if(num === 11) {
+                document.getElementById("translatedMonth").innerHTML = "November";
+            } else if(num === 12) {
+                document.getElementById("translatedMonth").innerHTML = "December";
+            } else {
+                document.getElementById("translatedMonth").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>
