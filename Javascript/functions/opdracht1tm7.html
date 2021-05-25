@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="answer"></p>
+    <button onclick="answer()">click</button>
+    <script>
+        function answer() {
+            opdracht2("hello world");
+            opdracht3(42);
+            console.log(multiply(3,2)); // opdracht 4
+
+            //opdracht 5
+            isKnown("John");
+            isKnown("jelle");
+
+            isKnown(pickName(Math.round( Math.random() * 8) + 1)); //opdracht 6
+
+            //opdracht 6
+            const isKnown2 = (name) => {
+                    if ( name === "John" || name === "Olly" || name === "Mo" 
+                    || name === "Hendrik" || name === "Tony") {
+                    console.log("Dit is een bekende van ons: " + name);
+                } else console.log("Onbekend in ons systeem!");
+            }
+            isKnown2("John");
+
+            //opdracht 7
+            //Ik heb dit al eens in een eerdere opdracht gedaan, nml opdracht 4
+            multiply(3, 3);
+            //rest-parameters kunnen oneindig veel zijn en worden als een array doorgegeven aan de functie. explicitie parameters zijn de exacte 
+        }
+
+        function helloWorld() { //opdracht 1
+            console.log("Hello, World!");
+        }
+        
+        function opdracht2(tekst) {
+            console.log(tekst);
+        }
+
+        function opdracht3(getal) {
+            console.log(getal);
+        }
+
+        function multiply(num1, num2) { //opdracht 4
+            return num1 * num2;
+        }
+
+        function isKnown(name) { //opdracht 5
+            if ( name === "John" || name === "Olly" || name === "Mo" 
+                || name === "Hendrik" || name === "Tony") {
+                console.log("Dit is een bekende van ons: " + name);
+            } else console.log("Onbekend in ons systeem!");
+        }
+
+        function pickName(i) { //opdracht 5
+            switch(i){
+                case 1: return "John";
+                case 2: return "Oly";
+                case 3: return "Mo";
+                case 4: return "Hendrik";
+                case 5: return "Tony";
+                case 6: return "Irus";
+                case 7: return "Jan";
+                case 8: return "Peter";
+            }
+        }
+    </script>
+</body>
+</html>
