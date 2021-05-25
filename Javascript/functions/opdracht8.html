@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table , table * {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Wiskunde</h1>
+        <table>
+            <thead>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td>
+                        <input type="text" class="grade willem beta" value="3" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>
+                        <input type="text" class="grade jan beta" value="7" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>
+                        <input type="text" class="grade kimsing beta" value="10" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>
+                        <input type="text" class="grade samantha beta" value="4" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>
+                        <input type="text" class="grade joyce beta" value="5.5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>
+                        <input type="text" class="grade gareth beta" value="1" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>Natuurkunde</h1>
+        <table>
+            <thead>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td>
+                        <input type="text" class="grade willem beta" value="7" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>
+                        <input type="text" class="grade jan beta" value="5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>
+                        <input type="text" class="grade kimsing beta" value="8" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>
+                        <input type="text" class="grade samantha beta" value="6" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>
+                        <input type="text" class="grade joyce beta" value="9" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>
+                        <input type="text" class="grade gareth beta" value="5.5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>Nederlands</h1>
+        <table>
+            <thead>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td>
+                        <input type="text" class="grade lang willem" value="7" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>
+                        <input type="text" class="grade lang jan" value="7" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>
+                        <input type="text" class="grade lang kimsing" value="4" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>
+                        <input type="text" class="grade lang samantha" value="8" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>
+                        <input type="text" class="grade lang joyce" value="8.5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>
+                        <input type="text" class="grade lang gareth" value="4" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>Engels</h1>
+        <table>
+            <thead>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td>
+                        <input type="text" class="grade lang willem" value="6" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>
+                        <input type="text" class="grade lang jan" value="6" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>
+                        <input type="text" class="grade lang kimsing" value="5.5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>
+                        <input type="text" class="grade lang samantha" value="4.3" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>
+                        <input type="text" class="grade lang joyce" value="5.5" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>
+                        <input type="text" class="grade lang gareth" value="8" onchange="changeGrade(this)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h1>Resultaat gemiddeld</h1>
+        <table>
+            <thead>
+                <th>Naam</th>
+                <th>Talen</th>
+                <th>Beta vakken</th>
+                <th>Volgende klas? > 6.5</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Willem</td>
+                    <td><input type="text" class="grade avglang willem" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta willem" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="willem nextclass"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input type="text" class="grade avglang jan" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta jan" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="jan nextclass"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input type="text" class="grade avglang kimsing" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta kimsing" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="kimsing nextclass"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input type="text" class="grade avglang samantha" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta samantha" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="samantha nextclass"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input type="text" class="grade avglang joyce" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta joyce" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="joyce nextclass"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input type="text" class="grade avglang gareth" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td><input type="text" class="grade avgbeta gareth" value="" onchange="changeGrade(this)" readonly="true"></td>
+                    <td class="gareth nextclass"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const students = ["willem", "jan", "kimsing", "samantha", "joyce", "gareth"];
+
+        const changeGrade = (elem) => {
+            setColor(elem);
+            for (let i = 0; i < students.length; i++) {
+                if(elem.classList.contains(students[i])) {
+                    setAvg(students[i]);
+                }
+            }
+        }
+
+        const setColor = (elem) => {
+            const grade = parseFloat(elem.value);
+            if ( grade != NaN) {
+                if ( grade < 5.5 ) {
+                    elem.style.background = "Red";
+                } else if ( grade >= 5.5 ) {
+                    elem.style.background = "Chartreuse";
+                } else if ( grade >= 7.5 ) {
+                    elem.style.background = "ForestGreen";
+                }
+            } else elem.style.background = "white";
+        }
+
+        const setAvg = (name) => {
+            let studentGrades = document.getElementsByClassName(name);
+            let avgLang = 0, avgBeta = 0;
+
+            for (let i = 0; i < studentGrades.length; i++) {
+                if(studentGrades[i].classList.contains("lang")) {
+                    avgLang += parseFloat(studentGrades[i].value);
+                } else if(studentGrades[i].classList.contains("beta")) {
+                    avgBeta += parseFloat(studentGrades[i].value);
+                }
+            }
+
+            avgLang /= 2;
+            avgBeta /= 2;
+
+            for (let i = 0; i < studentGrades.length; i++) {
+                if(studentGrades[i].classList.contains("avglang")) {
+                    studentGrades[i].value = avgLang;
+                } else if (studentGrades[i].classList.contains("avgbeta")) {
+                    studentGrades[i].value = avgBeta;
+                }
+            }
+
+            for (let i = 0; i < studentGrades.length; i++) {
+                let avg = (avgLang + avgBeta) / 2;
+                if(studentGrades[i].classList.contains("nextclass")) {
+                    if(avg > 6.5) {
+                        studentGrades[i].innerHTML = "Yes";
+                        studentGrades[i].style.background = "ForestGreen";
+                    } else {
+                        studentGrades[i].innerHTML = "No";
+                        studentGrades[i].style.background = "Red";
+                    }
+                }
+            }
+        }
+
+        for (let i = 0; i < students.length; i++) {
+            setAvg(students[i]);
+        }
+
+        let grades = document.getElementsByClassName("grade");
+        for (let i = 0; i < grades.length; i++) {
+            changeGrade(grades[i]);
+        }
+    </script>
+</body>
+</html>
