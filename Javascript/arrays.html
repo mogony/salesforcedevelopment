@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //opdracht 1
+        let nums = [5,2,76,435,643,329,345,765,98,21];
+        for(let i = 0; i < nums.length; i++) {
+            console.log(nums[i]);
+        }
+
+        //opdracht 2
+        let fruit = ['banana', 'apple', 'dragonfruit', 'mandarin', 'aardbei'];
+        for(let i = 0; i < fruit.length; i++) {
+            console.log(fruit[i]);
+        }
+
+        //opdracht 3
+        console.log(fruit[1]); //1, want index begint bij 0
+
+        //opdracht 4
+        console.log(fruit[4]); //5 items, index begint bij 0, eindigt bij 4
+
+        //opdracht 5
+        let random = (Math.round(Math.random() * 9)) % 5;
+        console.log('Index ' + random + ' van fruit array is ' + fruit[random]);
+
+    //opdracht 6
+        console.log('push() test');
+        fruit.push('berry'); 
+        //push voegt berry toe aan het einde van de array, op index 5
+        console.log(fruit[5]);
+        
+        console.log('pop() test');
+        //pop() returned het laatste element en verwijdert het uit de array
+        console.log(fruit.pop()); //zou berry moeten loggen
+        console.log(fruit[5]); //dit zou undefined moeten geven
+
+        console.log('shift() test');
+        //shift() returned het eerste  element en verwijdert het uit de array
+        console.log(fruit.shift());
+        console.log(fruit[0]); //dit zou nu apple moeten zijn
+
+        //slice maakt een tijdelijke array van de aangegeven index tot index en returned deze
+        console.log('slice() test'); 
+        console.log(fruit.slice(0,2)); //verwacht apple en dragonfruit
+
+        //splice verwijdert of vervangt de aangegeven indexes.
+        console.log('splice() test');
+        console.log(fruit);
+        fruit.splice(0, 2, 'ananas', 'grape');
+        console.log(fruit); //apple = ananas, dragonfruit = grape
+        fruit.splice(0, 2); 
+        console.log(fruit); //alleen de laatste 2 fruit
+        
+        //sorteert de items in de array op alfabetische volgorde
+        console.log('sort() test'); 
+        fruit.sort();
+        console.log(fruit);
+
+    //opdracht 7
+        console.log(fruit.length); //verwacht 2
+
+    //opdracht 8
+    //dit kan met splice()
+        console.log('opdracht 8 test');
+        console.log(fruit[0]); //aardbei
+        fruit.splice(0, 1, 'Sinaasappel');
+        console.log(fruit[0]); //Sinaasappel
+
+    //opdracht 9
+        console.log('opdracht 9 test');
+        console.log(fruit);
+        let tmp = fruit[0]; //sla Sinaasappel tijdelijk op
+        fruit[0] = fruit[1]; //stop aardbei op plek 1
+        fruit[1] = tmp; //Sinaasappel op plek 2
+        console.log(fruit);
+    </script>
+</body>
+</html>
