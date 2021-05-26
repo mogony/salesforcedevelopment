@@ -85,16 +85,16 @@
 
         function guess(obj) {
             if (playing) {
-                guesses++;
-            
-                if (guesses < 3) {
-                    if(words[obj] === guessingWord) {
+                
+                if(words[obj] === guessingWord) {
                         document.getElementById("label").innerHTML = "You have guessed the correct word! " + guessingWord;
                         playing = false;
                     } else {
+                        guesses++;
                         document.getElementById("count").innerHTML = guesses;
                     }
-                } else {
+
+                if ( guesses >= 3) {
                     playing = false;
                     document.getElementById("count").innerHTML = guesses;
                     document.getElementById("label").innerHTML = "Game over. The correct word is " + guessingWord;
