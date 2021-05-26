@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let carName;                      opdracht 2
+        function printCar() {
+            //const carBrand = "Volvo"; //  opdracht 1
+            carBrand = "Volvo";
+            return function(type) {
+                console.log(carBrand + " " + type);
+            }
+        }
+
+        const car = printCar();
+        car("v40");
+        // printCar();                      opdracht 1 t/m 3
+        //console.log(carBrand);            opdracht 1 t/m 3
+    </script>
+    <ol>
+        <li>Uncaught ReferenceError: carBrand is not defined</li>
+        <li>Uncaught ReferenceError: carBrand is not defined</li>
+        <li>Volvo</li>
+        <li>Volvo v40</li>
+    </ol>
+</body>
+</html>
