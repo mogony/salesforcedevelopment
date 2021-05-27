@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="answer"></div>
+    <script>
+        const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "kortbal"];
+
+        const opdracht1 = () => {
+            for(let i = 0; i < sports.length; i++) {
+                console.log(sports[i]);
+            }
+        }
+        
+        const opdracht2 = () => {
+            for(let i = 0; i <= 20; i++) {
+                if(i % 2 === 0)
+                    console.log(i);
+            }
+        }
+
+        const opdracht3 = () => {
+            for(let i = 0; i < sports.length; i+2) {
+                if(i % 2 === 0)
+                    console.log(sports[i]);
+            }
+        }
+
+        const opdracht4 = () => {
+            let i = 0;
+            while( i < sports.length ) {
+                console.log(sports[i++]);
+            }
+        }
+
+        const opdracht5 = () => {
+            for (i in sports) {
+                console.log(sports[i]);
+            }
+        }
+
+        const opdracht6 = () => {
+            for(const sport of sports) {
+                console.log(sport);
+            }
+        }
+
+        const opdracht7 = () => {
+            let wi = 1;
+            while(wi <= 3) {
+                for(let fi = 1; fi <= 10; fi++) {
+                    console.log(fi*wi);
+                }
+                wi++;
+            }
+        }
+
+        const opdracht8 = () => { //1e poging
+            let i = 0, j = 1;
+            for(let loop = 1; loop <= 50; loop++) {
+                if(loop <= 2) {
+                    //print eerste getal voor de eerste twee iteraties
+                    console.log(i);
+                } else if (loop == 3) {
+                    //print 2e getal voor iteratie 3
+                    console.log(j);
+                } else {
+                    //print optellingen
+                    let sum = i+j;
+                    i = j;
+                    j = sum;
+                    console.log(sum);
+                }
+            }
+        }
+
+        const opdracht8v2 = () => { //2e poging
+            let prevPrevNum = 0, prevNum = 0;
+            for (let loop = 1; loop <= 50; loop++) {
+                sum = prevPrevNum + prevNum;
+                if(loop == 3) sum = 1;
+                console.log(sum);
+                prevPrevNum = prevNum;
+                prevNum = sum;
+            }
+        }
+
+        const opdracht8v3 = () => { //poging na opzoeken oplossing
+            let prv2nd = 0, prv1st = 1;
+            for(let loop = 1; loop <= 50; loop++) {
+                console.log(prv2nd);
+                next = prv1st + prv2nd;
+                prv2nd = prv1st;
+                prv1st = next;
+            }
+        }
+
+        const opdracht9 = toSort => {
+            for(i = 0; i < toSort.length-1; i++) {
+                for(j = 0; j < toSort.length-1; j++) {
+                    if(toSort[j] > toSort[j+1]) {
+                        //console.log('Swap since ' + toSort[j] + '>' + toSort[j+1])
+                        let tmp = toSort[j+1];
+                        toSort[j+1] = toSort[j];
+                        toSort[j] = tmp;
+                    }
+                }
+                //console.log('Loop ' + (i+1) + ' ' + toSort);
+            }
+        }
+
+        let randomNums = [11,2,7,13,5,10,4,12,9,3,1,8,6,0];
+        console.log(randomNums);
+        opdracht9(randomNums);
+        console.log(randomNums);
+
+    </script>
+</body>
+</html>
