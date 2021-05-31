@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type='button' value='rock' onclick="play(0)">
+    <input type='button' value='paper' onclick="play(1)">
+    <input type='button' value='scissor' onclick="play(2)">
+
+    <h2 id='youpick'></h2>
+    <h2 id='pcpick'></h2>
+    <h1 id='result'></h1>
+
+    <script>
+        class Option {
+            constructor(name, kills, killedBy) {
+                this.name = name;
+                this.kills = kills;
+                this.killedBy = killedBy;
+            }
+        }
+
+        const play = (thing) => {          
+            let options = [ new Option('rock', 'scissors', 'paper'),
+                            new Option('paper', 'rock', 'scissors'),
+                            new Option('scissor', 'paper', 'rock')];
+
+            let playerChoice = options[thing];
+            document.getElementById('youpick').innerHTML = 'You pick ' + playerChoice.name;
+
+            let computerChoice = options[Math.round(Math.random()*2)];
+            document.getElementById('pcpick').innerHTML = 'Computer picks ' + computerChoice.name;
+
+            let resultElem = document.getElementById('result');
+            if(playerChoice.kills === computerChoice.name) {
+                resultElem.innerHTML = 'You win!';
+            } else if (computerChoice.kills === playerChoice.name) {
+                resultElem.innerHTML = 'You lost!';
+            } else  resultElem.innerHTML = "It's a draw!";
+        }
+    </script>
+</body>
+</html>
