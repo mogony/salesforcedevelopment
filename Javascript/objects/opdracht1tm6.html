@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        //opdracht 1
+        const Club = function (name, sport, memberAmount) {
+            this.name = name;
+            this.sport = sport;
+            this.memberAmount = memberAmount;
+        }
+
+        //opdracht 2
+        const ContactDetails = function (address, telnum, contactPerson) {
+            this.address = address;
+            this.telnum = telnum;
+            this.contactPerson = contactPerson;
+        }
+
+        //opdracht 3
+        let top4 = [];
+        top4.push(new Club('Ajax', 'Voetbal', 40000));
+        top4.push(new Club('AZ', 'Voetbal', 40000));
+        top4.push(new Club('PSV', 'Voetbal', 40000));
+        top4.push(new Club('Feyenoord', 'Voetbal', 40000));
+
+        for (const clup of top4) {
+            console.log(clup.name);
+        }
+
+        //opdracht 4
+        const Person = function(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        const persons = [
+            new Person("Jan", 24),
+            new Person("Klaas", 15),
+            new Person("Yanis", 42),
+            new Person("Rupel", 55),
+            new Person("Hendrik", 32),
+            new Person("Mono", 28),
+            new Person("West", 23),
+        ]
+
+        for(let i = 0; i<persons.length; i++) {
+            for(let j = 0; j<persons.length-1; j++) {
+                if(persons[j].age > persons[j+1].age) {
+                    let tmp = persons[j+1].age;
+                    persons[j+1].age = persons[j].age;
+                    persons[j].age = tmp;
+                }
+            }
+        }
+
+        console.log(persons);
+
+        //opdracht 5
+        persons.push({ name: 'East', age: 56});
+        //Initializers zijn makkelijk als je snel 1 object wil aanmaken. Verder zie ik alleen maar voordelen van het gebruiken van object constructors.
+
+        console.log(persons[persons.length-1]);
+
+        //opdracht 6
+        class PersonClass {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+        }
+        const person1 = new PersonClass('Jelle', 26);
+        console.log(person1.name + ' is ' + person1.age);
+    </script>
+</body>
+</html>
