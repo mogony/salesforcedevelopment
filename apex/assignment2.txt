@@ -1,0 +1,14 @@
+Account[] accts = new List<Account>();
+String[] educationlvl = new String[]{'hbo', 'havo-vwo', 'wo'};
+    
+for(Integer i=0;i<3;i++) {
+    Account a = new Account(Name='Acme' + i, 
+                            Address__c='Amsterdam', RecordTypeId = '01209000000ZZyxAAG', Level_of_Education__c = educationlvl[i]);
+    accts.add(a);
+}
+
+try {
+    insert accts;
+} catch(DmlException e) {
+    System.debug('An unexpected error has occurred: ' + e.getMessage());
+}
