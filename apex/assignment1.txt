@@ -1,0 +1,7 @@
+public static List<Account> getAllActiveAccounts() {
+      return [SELECT Name,Address__c,Quantity_Students__c,Level_of_Education__c FROM Account WHERE RecordType.name = 'School Account'];
+    }
+
+    List<Account> accounts = getAllActiveAccounts();
+
+System.debug(accounts);
