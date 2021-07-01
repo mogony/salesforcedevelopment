@@ -22,8 +22,24 @@ public with sharing class AccountController {
             );
             accs.add(a);
         }
-        for(Integer j = 0; j < accs.size(); j++) {
-            System.debug(accs[j]);
+        try {
+            insert accs;
+        } catch(DmlException e) {
+            System.debug(
+                'An unexpected error has occurred: ' + e.getMessage());
+        }
+    }
+
+    public static void assignment3() {
+        String[] loe = new String[]{'hbo', 'havo-vwo', 'wo'};
+        for(Integer i = 0; i < 3; i++) {
+            Account a = new Account(
+                Name = 'Bar ' + i,
+                Address__c = 'Utrecht',
+                RecordTypeId = '01209000000ZZyxAAG', 
+                Level_of_Education__c = loe[i]
+            );
+            accs.add(a);
         }
         try {
             insert accs;
