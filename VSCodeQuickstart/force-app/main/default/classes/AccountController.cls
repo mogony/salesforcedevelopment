@@ -56,4 +56,10 @@ public with sharing class AccountController {
             System.debug(school);
         }
     }
-}
+    
+    public static void assignment6() {
+        List<Account> schools = [SELECT Name,Address__c,Quantity_Students__c,Level_of_Education__c FROM Account WHERE RecordType.name = 'School Account' AND Address__c LIKE '%Den Haag%' AND Quantity_Students__c >= 10000];
+        for ( Account school : schools) {
+            System.debug(school);
+        }
+    }
