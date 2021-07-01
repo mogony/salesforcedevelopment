@@ -63,3 +63,4 @@ public with sharing class AccountController {
             System.debug(school);
         }
     }
+}
