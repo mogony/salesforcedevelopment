@@ -49,4 +49,8 @@ public with sharing class AccountController {
                 'An unexpected error has occurred: ' + e.getMessage());
         }
     }
+
+    public static void assignment4n5(String city) {
+        List<Account> schools = [SELECT Name,Address__c,Quantity_Students__c,Level_of_Education__c FROM Account WHERE RecordType.name = 'School Account' AND Address__c = :city AND Level_of_Education__c = 'wo'];
+    }
 }
