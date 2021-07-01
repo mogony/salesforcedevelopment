@@ -31,6 +31,7 @@ public with sharing class AccountController {
     }
 
     public static void assignment3() {
+        List<Account> accs = new List<Account>();
         String[] loe = new String[]{'hbo', 'havo-vwo', 'wo'};
         for(Integer i = 0; i < 3; i++) {
             Account a = new Account(
