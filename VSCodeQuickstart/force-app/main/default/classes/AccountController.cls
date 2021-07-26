@@ -22,6 +22,9 @@ public with sharing class AccountController {
             );
             accs.add(a);
         }
+        for ( Account school : accs) {
+            System.debug('Added: ' + school);
+        }
         try {
             insert accs;
         } catch(DmlException e) {
@@ -41,6 +44,9 @@ public with sharing class AccountController {
                 Level_of_Education__c = loe[i]
             );
             accs.add(a);
+        }
+        for ( Account school : accs) {
+            System.debug('Added: ' + school);
         }
         try {
             insert accs;
